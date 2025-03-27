@@ -1,8 +1,16 @@
 import { useState, useEffect } from 'react';
-// import './Saved.Candidates.css';  // Certifique-se de ter importado o arquivo CSS
-import { Candidate } from '../interfaces/Candidate.interface';  // Importando o tipo Candidate
 
 const SavedCandidates = () => {
+  interface Candidate {
+    id: number;
+    avatar_url: string;
+    login: string;
+    location: string | null;
+    email: string | null;
+    company: string | null;
+    bio: string | null;
+  }
+
   const [savedCandidates, setSavedCandidates] = useState<Candidate[]>([]);
 
   // Carregar candidatos salvos do localStorage
@@ -19,13 +27,13 @@ const SavedCandidates = () => {
   };
 
   return (
-    <section className="saved-candidates-section">
-      <h1 className="title">Potential Candidates</h1>
+    <section>
+      <h1>Potential Candidates</h1>
       {savedCandidates.length === 0 ? (
-        <p className="no-candidates">No saved candidates.</p>
+        <p>No saved candidates.</p>
       ) : (
-        <table className="candidates-table">
-          <thead>
+        <table className="candidates-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
+          <thead style={{ backgroundColor: 'black', color: 'white' }}>
             <tr>
               <th>Image</th>
               <th>Name</th>
@@ -38,27 +46,30 @@ const SavedCandidates = () => {
           </thead>
           <tbody>
             {savedCandidates.map((candidate: Candidate, index: number) => (
-              <tr key={candidate.id} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
+              <tr 
+                key={candidate.id} 
+                style={{ backgroundColor: index % 2 === 0 ? 'lightgrey' : 'white' }}
+              >
                 <td>
                   <img 
                     src={candidate.avatar_url} 
                     alt="Avatar" 
-                    className="candidate-avatar1" 
+                    style={{ width: '50px', height: '50px', borderRadius: '50%' }} 
                   />
                 </td>
-                <td className='name'>{candidate.login || 'No name available'}</td>
-                <td className='location'>{candidate.location || 'No location available'}</td>
-                <td className='email'>{candidate.email ? (
-                  <a href={`mailto:${candidate.email}`} className="candidate-email">{candidate.email}</a>
+                <td>{candidate.login || 'No name available'}</td>
+                <td>{candidate.location || 'No location available'}</td>
+                <td>{candidate.email ? (
+                  <a href={`mailto:${candidate.email}`} style={{ color: 'blue' }}>{candidate.email}</a>
                 ) : 'No email available'}</td>
-                <td className='company'>{candidate.company || 'No company available'}</td>
+                <td>{candidate.company || 'No company available'}</td>
                 <td>{candidate.bio || 'No bio available'}</td>
-                <td className='reject-btn1'>
+                <td>
                   <button 
-                    className="reject-btn" 
-                    onClick={() => handleReject(index)}
+                    onClick={() => handleReject(index)} 
+                    style={{ backgroundColor: 'red', color: 'white', border: 'none', padding: '5px 10px', cursor: 'pointer' }}
                   >
-                    −
+                    -
                   </button>
                 </td>
               </tr>
