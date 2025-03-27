@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+img.candidate-avatar1 {
+  border-radius: 30%;
+  border-color: solid 10px #fff;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+
 a {
   font-weight: 500;
   color: white;
@@ -54,13 +62,16 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 1px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  border-radius: 50%;
+  color: black;
+  padding: 0.9em 1.2em;
+  font-size: 0.6em;
+  margin: 10px;
+  font-weight: 900;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: red;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -125,6 +136,6 @@ tbody tr:nth-child(odd) {
 }
 
 .table {
-  width: 80vw;
+  width: 40vw;
   table-layout: fixed;
 }
