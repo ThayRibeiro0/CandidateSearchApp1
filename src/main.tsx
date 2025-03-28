@@ -19,13 +19,14 @@ const router = createBrowserRouter([
         element: <CandidateSearch />,
       },
       {
-        path: '/SavedCandidates',
-        element: <SavedCandidates />,
+        path: '/potentialcandidates',
+        element: <PotentialCandidates />,
       },
       {
-        path: '/PotentialCandidates',
-        element: <PotentialCandidates />
-      }
+        path: '/savedcandidates',
+        element: <SavedCandidates />,
+      },
+        
     ],
   }
 ]);
