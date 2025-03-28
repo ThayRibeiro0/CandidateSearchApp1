@@ -38,7 +38,7 @@ const CandidateSearch = () => {
       savedCandidates.push(candidate);
       localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
       console.log('Candidate saved:', candidate);
-      navigate('/potential'); 
+      navigate('/potentialcandidates'); 
     } else {
       alert('Este candidato já está salvo!');
     }
