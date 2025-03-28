@@ -1,4 +1,5 @@
 import SavedCandidates from "./SavedCandidates";
+import './PotentitalCandidates.css';
 
 const PotentialCandidates = () => {
   return (

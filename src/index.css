@@ -34,6 +34,14 @@ a {
 
 }
 
+img.candidate-avatar {
+  border-radius: 30%;
+  border-color: solid 10px #fff;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+
 
 a:hover {
   color: #9ca0ea;
@@ -107,12 +115,19 @@ main {
 
 tr {
   border-radius: 10px;
-  background-color: #000;
+  color: black;
+}
+
+th {
+  background-color: black;
   color: white;
+  font-size: 1.2em;
+  padding: 0.5em;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #333333;
+  background-color: rgb(47, 46, 46);
+  color: black;
 }
 
 .nav {

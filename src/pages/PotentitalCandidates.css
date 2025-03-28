@@ -1,0 +1,60 @@
+.candidates-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0d1117; /* Dark blue page background */
+    color: #c9d1d9; /* Light text color */
+  }
+  
+  .candidates-table th,
+  .candidates-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid darkblue; /* Dark grey border */
+  }
+  
+  .candidates-table th {
+    background-color: black; /* Black header */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .candidates-table tbody tr:nth-child(even) {
+    background-color: black; /* Black for even rows */
+    color: white;
+  }
+  
+  .candidates-table tbody tr:nth-child(odd) {
+    background-color: #333; /* Dark grey for odd rows */
+    color: white;
+  }
+  
+  .candidate-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  .reject-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px; /* Add border-radius for the button */
+    font-size: 0.9em;
+  }
+  
+  .reject-button:hover {
+    background-color: darkred;
+  }
+  
+  .email-link {
+    color: #58a6ff; /* Blue for links */
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
