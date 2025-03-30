@@ -1,33 +1,88 @@
-# React + TypeScript + Vite
+# Candidates Search App 👩‍💻👨‍💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Candidates Search App** allows users to search for candidates based on a query, view detailed information about each candidate, and save candidates of interest for future access. The app is designed to be responsive, working seamlessly on both mobile and desktop devices.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Description
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This **Candidates Search App** allows users to:
 
-* Configure the top-level `parserOptions` property as follows:
+- View detailed information about candidates, such as experience, location, and skills.
+- Save candidates to a "favorites" list for easy access.
+- Use data from an external API to fetch candidate information.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Installation
+
+### Clone the Repository
+
+1. Clone the repository to your local machine:
+
+```bash
+   git clone https://github.com/ThayRibeiro0/candidates-search-app.git
 ```
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+2. Navigate to the project directory:
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+```bash
+    cd candidates-search-app
+```
+
+3. Install the dependencies:
+
+To install the necessary dependencies for the frontend, run:
+
+```bash
+    npm install
+```
+
+This will install all dependencies listed in package.json.
+
+## Usage
+
+Running the App Locally
+
+To run the application locally, use the following command to start the development server:
+
+```bash
+ npm run start:dev
+```
+
+This will start the development servers for both the frontend (React) and the backend (Node.js). The client-side application will be available at http://localhost:3000, and the server will be running at http://localhost:3001.
+
+## Build the Project
+
+To build the project for production, run:
+
+```bash
+ npm run build
+```
+
+This will compile and bundle the frontend code for production use.
+
+## Deployment
+
+To deploy the application, you can follow these steps:
+
+- Push your changes to GitHub.
+- Connect your repository to a deployment platform, such as Render: Render.com
+- Set the build command to npm run render-build.
+- Set the start command to npm run start.
+  
+## Deployed Application
+Check out the live version of the app here: [Live Version](https://candidatesearchapp1.onrender.com/)
+
+## Technologies Used
+React.js, Node.js, Express.js, External API to search candidates (e.g., GitHub API or another source), TypeScript, npm and nodemon.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
