@@ -7,8 +7,13 @@ The **Candidates Search App** allows users to search for candidates based on a q
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Build the Project ](#build-the-project)
+- [Deployment](#deployment)
+- [Deployed Application](#deployed-application)
+- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [License](#license)
+- [Contributing](#contributing)
 
 ## Description
 
@@ -76,13 +81,25 @@ To deploy the application, you can follow these steps:
 - Set the start command to npm run start.
   
 ## Deployed Application
+
 Check out the live version of the app here: [Live Version](https://candidatesearchapp1.onrender.com/)
 
+### 📸 Screenshots
+
+<div>
+<img src="https://i.imgur.com/6Q9zZ8T.png"
+  <img src="./public/CandidatesSearch.png" alt="CandidatesSearch_Home_Page" width="600" height="300">
+  <img src="./public/PotentialCandidates.png" alt="PotentialCandidates_Page" width="600" height="300">
+</div>
+
 ## Technologies Used
+
 React.js, Node.js, Express.js, External API to search candidates (e.g., GitHub API or another source), TypeScript, npm and nodemon.
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
 ## Contributing
+
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
