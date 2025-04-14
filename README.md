@@ -87,7 +87,6 @@ Check out the live version of the app here: [Live Version](https://candidatesear
 ### 📸 Screenshots
 
 <div>
-<img src="https://i.imgur.com/6Q9zZ8T.png"
   <img src="./public/CandidatesSearch.png" alt="CandidatesSearch_Home_Page" width="600" height="300">
   <img src="./public/PotentialCandidates.png" alt="PotentialCandidates_Page" width="600" height="300">
 </div>
